@@ -8,14 +8,14 @@ def matrix_dot_vector(a: list[list[int|float]], b: list[int|float]) -> list[int|
 
     # dimensi
     m = len(a)      # baris a
-    n = len(a[0])   # kolom b
+    n = len(a[0])   # kolom a
     o = len(b)      # panjang vektor
 
     # pastikan kolom di a sama dengan panjang vektor b
     if o != n:
         return -1
 
-    # buat list kosong untuk menyimpan hasil
+    # buat list ukuran m, masing masing diisi 0 -> untuk menampung hasil
     res = [0]*m
     
     # pertama looping ke baris dulu
